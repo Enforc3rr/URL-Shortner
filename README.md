@@ -7,10 +7,10 @@ This Application is Based on Nodejs And Basically helps us to shorten by letting
 
 ##### To Give an Visit To Particular URL -> POST @ http://host:PORT/:AliasGiven
 
-#### Format Of JSON Which Needs To Be Passed 
-{
-  "altUrlName":"Name",
-  "originalUrl":"URL"
+### Format Of JSON Which Needs To Be Passed 
+{  
+    "altUrlName":"Name",  
+    "originalUrl":"URL"  
 }
 
 ### Database Model Depiction 
