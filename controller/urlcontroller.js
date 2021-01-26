@@ -1,5 +1,8 @@
 const modelUrl = require("../model/urlSchema");
-
+/*
+@desc  For Storing The URL and It's Alias in Database
+@route POST /
+*/
 exports.urlCreation = async (req , res , next) =>{
     try{
         if(req.body.originalUrl.substr(0,3)==="www"){
@@ -21,7 +24,10 @@ exports.urlCreation = async (req , res , next) =>{
     }
     next();
 }
-
+/*
+@desc  For Finding and Redirecting URL associated with the given Parameter
+@route GET /:parameter
+*/
 exports.urlRedirect = async (req , res , next)=>{
     try {
         const findUrl = await modelUrl.findOne({
